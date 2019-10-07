@@ -14,9 +14,13 @@
 |Name|Image|Link|Cost|Count|Total|
 |----|-----|----|----|------|--|
 |WeMos ESP8266<br>Controller|<img src="https://ae01.alicdn.com/kf/HTB1pcONafvsK1Rjy0Fiq6zwtXXao.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32961774955.html)|$4.7|1|$4.7|
+|Battery Shield|<img src="https://ae01.alicdn.com/kf/HTB15T36apzsK1Rjy1Xbq6xOaFXaV/ESP32-ESP8266-18650-V3-V8.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32968246769.html)|$3.9|1|$3.9|
+|Solar Panel|<img src="https://ae01.alicdn.com/kf/HTB1JKdoI4GYBuNjy0Fnq6x5lpXai/5VDC-150-160-200-250-500-840.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32906698984.html)|$1.7|1|$1.7|
+|On/Off Timer<br>TPL5110|<img src="https://ae01.alicdn.com/kf/H4352fad5d8374303b9ae783e40c850c0n/TPL5110-Breakout.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/4000133526062.html)|$6.9|1|$6.9|
 |LCD Display<br>1602|<img src="https://ae01.alicdn.com/kf/HTB17dsbKamWBuNjy1Xaq6xCbXXaw.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32911523647.html)|$3|1|$3|
 |Magnets|<img src="https://ae01.alicdn.com/kf/HTB1LNBUTa6qK1RjSZFmq6x0PFXaJ/2-5-10-15-20x5-5-20-x-5.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/1000008249898.html)|$6|1|$6|
 |Connector<br>GX16 4pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
+|Connector<br>GX16 2pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
 |Cable SMA-SMA<br>3m|<img src="https://ae01.alicdn.com/kf/HTB1m7naFf5TBuNjSspmq6yDRVXac.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32900643953.html)|$8|1|$8|
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
