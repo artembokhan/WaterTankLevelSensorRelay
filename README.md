@@ -26,4 +26,4 @@
 |Cable SMA-SMA<br>3m|<img src="https://ae01.alicdn.com/kf/HTB1m7naFf5TBuNjSspmq6yDRVXac.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32900643953.html)|$8|1|$8|
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
-
+|**Total**|||||$78|
