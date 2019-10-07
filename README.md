@@ -1,6 +1,4 @@
-# WaterTankLevelSensorRelay
-Pump Relay Based on Remote WiFi Tank Water Level Sensor
-
+# Sensor
 
 |Name|Image|Link|Cost|Count|Total|
 |----|-----|----|----|------|--|
