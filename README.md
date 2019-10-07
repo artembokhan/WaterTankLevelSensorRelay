@@ -13,6 +13,7 @@
 
 |Name|Image|Link|Cost|Count|Total|
 |----|-----|----|----|------|--|
+|DC Adapter<br>5V|<img src="https://ae01.alicdn.com/kf/HTB10jNHXTHuK1RkSndVq6xVwpXaZ/DR-15W-DIN-5-V-12-V.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32951224631.html)|$10|1|$10|
 |WeMos ESP8266<br>Controller|<img src="https://ae01.alicdn.com/kf/HTB1pcONafvsK1Rjy0Fiq6zwtXXao.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32961774955.html)|$4.7|1|$4.7|
 |Battery Shield|<img src="https://ae01.alicdn.com/kf/HTB15T36apzsK1Rjy1Xbq6xOaFXaV/ESP32-ESP8266-18650-V3-V8.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32968246769.html)|$3.9|1|$3.9|
 |Batteries|<img src="https://ae01.alicdn.com/kf/HTB1IhRWaYj1gK0jSZFOq6A7GpXav/3000mAh-3-7-V-16340-CR123A.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32912759722.html)|$5.42|1|$5.42|
