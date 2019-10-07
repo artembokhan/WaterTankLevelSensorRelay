@@ -35,7 +35,9 @@
 |DC Adapter<br>5V|<img src="https://ae01.alicdn.com/kf/HTB10jNHXTHuK1RkSndVq6xVwpXaZ/DR-15W-DIN-5-V-12-V.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32951224631.html)|$10|1|$10|
 |WeMos ESP8266<br>Controller|<img src="https://ae01.alicdn.com/kf/HTB1pcONafvsK1Rjy0Fiq6zwtXXao.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32961774955.html)|$4.7|1|$4.7|
 |LCD Display<br>1602|<img src="https://ae01.alicdn.com/kf/HTB17dsbKamWBuNjy1Xaq6xCbXXaw.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32911523647.html)|$3|1|$3|
+|Solid State Relay|<img src="https://ae01.alicdn.com/kf/H7465488876f8478c852690c32f38a811d/SSR-10DA-SSR-25DA-SSR-40DA-10A-25A-40A.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32706812752.html)|$3.12|1|$3.12|
 |Enclosure Box<br>115x90x55|<img src="https://ae01.alicdn.com/kf/Hbf894059435a4ebea3cd177ad346c721g/-.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32956212529.html)|$10|1|$10|
+|Screws|<img src="https://ae01.alicdn.com/kf/HTB1CAu9f25TBuNjSspcq6znGFXa4.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32858625529.html)|$5|1|$5|
 |Rail Adapter|<img src="https://ae01.alicdn.com/kf/HTB1hg12LVXXXXcKXVXXq6xXFXXXl/202623774/HTB1hg12LVXXXXcKXVXXq6xXFXXXl.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32843068712.html)|$0.95|1|$0.95|
 |Connector<br>GX16 2pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
 |Cable SMA-SMA<br>3m|<img src="https://ae01.alicdn.com/kf/HTB1m7naFf5TBuNjSspmq6yDRVXac.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32900643953.html)|$8|1|$8|
