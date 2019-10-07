@@ -15,6 +15,7 @@
 |----|-----|----|----|------|--|
 |WeMos ESP8266<br>Controller|<img src="https://ae01.alicdn.com/kf/HTB1pcONafvsK1Rjy0Fiq6zwtXXao.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32961774955.html)|$4.7|1|$4.7|
 |Battery Shield|<img src="https://ae01.alicdn.com/kf/HTB15T36apzsK1Rjy1Xbq6xOaFXaV/ESP32-ESP8266-18650-V3-V8.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32968246769.html)|$3.9|1|$3.9|
+|Batteries|<img src="https://ae01.alicdn.com/kf/HTB1IhRWaYj1gK0jSZFOq6A7GpXav/3000mAh-3-7-V-16340-CR123A.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32912759722.html)|$5.42|1|$5.42|
 |Solar Panel|<img src="https://ae01.alicdn.com/kf/HTB1JKdoI4GYBuNjy0Fnq6x5lpXai/5VDC-150-160-200-250-500-840.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32906698984.html)|$1.7|1|$1.7|
 |On/Off Timer<br>TPL5110|<img src="https://ae01.alicdn.com/kf/H4352fad5d8374303b9ae783e40c850c0n/TPL5110-Breakout.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/4000133526062.html)|$6.9|1|$6.9|
 |LCD Display<br>1602|<img src="https://ae01.alicdn.com/kf/HTB17dsbKamWBuNjy1Xaq6xCbXXaw.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32911523647.html)|$3|1|$3|
