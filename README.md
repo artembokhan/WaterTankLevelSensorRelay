@@ -28,7 +28,7 @@
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
 |**Total**|||||$78|
 
-# Reciever
+# Receiver
 
 |Name|Image|Link|Cost|Count|Total|
 |----|-----|----|----|------|--|
