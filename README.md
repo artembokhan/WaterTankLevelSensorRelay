@@ -22,7 +22,6 @@
 |Enclosure Box<br>115x90x55|<img src="https://ae01.alicdn.com/kf/Hbf894059435a4ebea3cd177ad346c721g/-.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32956212529.html)|$10|1|$10|
 |Magnets|<img src="https://ae01.alicdn.com/kf/HTB1LNBUTa6qK1RjSZFmq6x0PFXaJ/2-5-10-15-20x5-5-20-x-5.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/1000008249898.html)|$6|1|$6|
 |Connector<br>GX16 4pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
-|Connector<br>GX16 2pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
 |Cable SMA-SMA<br>3m|<img src="https://ae01.alicdn.com/kf/HTB1m7naFf5TBuNjSspmq6yDRVXac.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32900643953.html)|$8|1|$8|
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
@@ -40,7 +39,6 @@
 |Enclosure Box<br>115x90x55|<img src="https://ae01.alicdn.com/kf/Hbf894059435a4ebea3cd177ad346c721g/-.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32956212529.html)|$10|1|$10|
 |Screws|<img src="https://ae01.alicdn.com/kf/HTB1CAu9f25TBuNjSspcq6znGFXa4.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32858625529.html)|$5|1|$5|
 |Rail Adapter|<img src="https://ae01.alicdn.com/kf/HTB1hg12LVXXXXcKXVXXq6xXFXXXl/202623774/HTB1hg12LVXXXXcKXVXXq6xXFXXXl.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32843068712.html)|$0.95|1|$0.95|
-|Connector<br>GX16 2pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
 |Cable SMA-SMA<br>3m|<img src="https://ae01.alicdn.com/kf/HTB1m7naFf5TBuNjSspmq6yDRVXac.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32900643953.html)|$8|1|$8|
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
