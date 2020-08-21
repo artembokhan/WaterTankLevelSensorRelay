@@ -28,14 +28,14 @@
 |USB Connector|<img src="https://ae01.alicdn.com/kf/HTB15.RMSpXXXXataXXXq6xXFXXXO/20-Micro-USB-5Pin-5P.jpg" width="40%"/>|[Link](https://aliexpress.ru/item/32778491155.html)|$|1|$|
 |**Total**|||||$78|
 
-# Receiver
+# Relay
 
 |Name|Image|Link|Cost|Count|Total|
 |----|-----|----|----|------|--|
 |DC Adapter<br>5V|<img src="https://ae01.alicdn.com/kf/HTB10jNHXTHuK1RkSndVq6xVwpXaZ/DR-15W-DIN-5-V-12-V.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32951224631.html)|$10|1|$10|
 |WeMos ESP8266<br>Controller|<img src="https://ae01.alicdn.com/kf/HTB1pcONafvsK1Rjy0Fiq6zwtXXao.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32961774955.html)|$4.7|1|$4.7|
 |LCD Display<br>1602|<img src="https://ae01.alicdn.com/kf/HTB17dsbKamWBuNjy1Xaq6xCbXXaw.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32911523647.html)|$3|1|$3|
-|Solid State Relay|<img src="https://ae01.alicdn.com/kf/H7465488876f8478c852690c32f38a811d/SSR-10DA-SSR-25DA-SSR-40DA-10A-25A-40A.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32706812752.html)|$3.12|1|$3.12|
+|Solid State Relay|<img src="https://ae01.alicdn.com/kf/H65952a493c2c45f3ba5efe6d7a7cfb58Q/1-Channel-Solid-State-Relay-Module-Board-High-Level-Trigger-SSR-Input-5V-DC-Output-240V.jpg" width="40%"/>|[Link](https://www.aliexpress.com/item/4000961718027.html)|$1|1|$1|
 |Enclosure Box<br>115x90x55|<img src="https://ae01.alicdn.com/kf/Hbf894059435a4ebea3cd177ad346c721g/-.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32956212529.html)|$10|1|$10|
 |Screws|<img src="https://ae01.alicdn.com/kf/HTB1CAu9f25TBuNjSspcq6znGFXa4.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32858625529.html)|$5|1|$5|
 |Rail Adapter|<img src="https://ae01.alicdn.com/kf/HTB1hg12LVXXXXcKXVXXq6xXFXXXl/202623774/HTB1hg12LVXXXXcKXVXXq6xXFXXXl.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32843068712.html)|$0.95|1|$0.95|
