@@ -17,7 +17,7 @@
 |Battery Shield|<img src="https://ae01.alicdn.com/kf/HTB15T36apzsK1Rjy1Xbq6xOaFXaV/ESP32-ESP8266-18650-V3-V8.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32968246769.html)|$3.9|1|$3.9|
 |Batteries|<img src="https://ae01.alicdn.com/kf/HTB1IhRWaYj1gK0jSZFOq6A7GpXav/3000mAh-3-7-V-16340-CR123A.jpg_640x640.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32912759722.html)|$5.42|1|$5.42|
 |Solar Panel|<img src="https://ae01.alicdn.com/kf/HTB1o1zXaHArBKNjSZFLq6A_dVXax/Mini-1-PC-Solar-Panels-5V-60MA-0-3W-Power-Charging-Solar-DIY-Rechargeable-Batteries.jpg" width="40%"/>|[Link](https://www.aliexpress.com/item/32856664521.html)|$1.35|1|$1.35|
-|On/Off Timer<br>TPL5110|<img src="https://ae01.alicdn.com/kf/H4352fad5d8374303b9ae783e40c850c0n/TPL5110-Breakout.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/4000133526062.html)|$6.9|1|$6.9|
+|On/Off Timer<br>Adafruit TPL5110|<img src="https://i.ebayimg.com/images/g/zY0AAOSw1u9fAuCl/s-l1600.jpg" width="40%"/>|[Link](https://www.ebay.com/itm/272626822349)|$12|1|$12|
 |LCD Display<br>1602|<img src="https://ae01.alicdn.com/kf/HTB17dsbKamWBuNjy1Xaq6xCbXXaw.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32911523647.html)|$3|1|$3|
 |Enclosure Box<br>115x90x55|<img src="https://ae01.alicdn.com/kf/Hbf894059435a4ebea3cd177ad346c721g/-.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32956212529.html)|$10|1|$10|
 |Magnets|<img src="https://ae01.alicdn.com/kf/HTB1LNBUTa6qK1RjSZFmq6x0PFXaJ/2-5-10-15-20x5-5-20-x-5.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/1000008249898.html)|$6|1|$6|
