@@ -4,14 +4,14 @@
 const String  version = "AP-1.0";
 const char*   ssid = "point-uz";
 const char*   key = "nou8haiy";
-const int     relayPin = D2;
+const int     relayPin = 5;
 const int     distanceStart = 100, // Distance to turn on relay [cm] 
               distanceStop  = 30,  // Distance to turn off relay [cm]
               distanceMax = 400;   // Max appropriate sensor distance
 const
-unsigned long intervalIdle    =    15 * 60 * 1000, // 30 minutes: max working time without sensor update [ms]
-              intervalProtect =     1 * 60 * 1000, // 60 minutes: min idle time of relay [ms]
-              intervalMaxWorking =  1 * 60 * 1000; //  4 hours: max working time
+unsigned long intervalIdle    =     1 * 60 * 60 * 1000, // 1 minutes: max working time without sensor update [ms]
+              intervalProtect =     1 * 60 * 60 * 1000, // 1 hour:    protection time of relay [ms]
+              intervalMaxWorking =  4 * 60 * 60 * 1000; // 4 hours:   max working time
 
 int           distance=-1;
 String        StatusRelay = "off",
@@ -173,5 +173,5 @@ void loop() {
     LCDStatus();
     server.handleClient();
     updateRelay();
-    delay(50);
+//    delay(50);
 }

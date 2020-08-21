@@ -5,20 +5,35 @@
 
 #define triggerPin 1 // TX pin
 #define echoPin 3 // RX pin
-#define donePin 16
-#define measurements 12
+#define donePin 5
+#define measurements 11
 
 const String version = "SENSOR-1.0";
 const char*  ssid = "point-uz";
 const char*  key = "nou8haiy";
 
+// static data to connect wifi quickly
+#define ipaddress IPAddress(192, 168, 4, 200)
+#define gateway   IPAddress(192, 168, 4,   1)
+#define mask      IPAddress(255, 255, 255, 0)
+uint8_t mac[6] = { 0xCE, 0x50, 0xE3, 0x69, 0x67, 0x5b }; // router's mac-address 
+int channel = 2; // wifi channel
+
 int distance [measurements], median;
 
 // Init display
 //LiquidCrystal lcd(12,13,17,16,27,14); // espduino32
-LiquidCrystal    lcd(12,13,4,0,2,14);   // wemos r2
+LiquidCrystal    lcd(12,13,4,0,2,14);   // wemos d1 r2
 
 void setup() {
+    // Init display
+    lcd.begin(16, 2);
+    lcd.clear();
+    lcd.setCursor(0,0);
+    lcd.print("Boot: " + version);
+
+    WiFi.config(ipaddress, gateway, mask);
+
     // Init timer pin
     digitalWrite(donePin, LOW);
     pinMode(donePin, OUTPUT);
@@ -27,17 +42,13 @@ void setup() {
     pinMode(triggerPin, OUTPUT);
     pinMode(echoPin, INPUT);
 
-    // Init display
-    lcd.begin(16, 2);
-    lcd.clear();
-    lcd.setCursor(0,0);
-    lcd.print("Boot: " + version);
     delay(300);
 }
 
 void loop(){
-    WiFi.begin(ssid, key);
-
+    WiFi.persistent(false);
+    WiFi.enableInsecureWEP();
+    WiFi.begin(ssid, key, channel, mac, true);
     lcd.clear();
 
     // Measure distance
@@ -56,7 +67,7 @@ void loop(){
         digitalWrite(triggerPin, LOW);
 
         // recieve echo
-        distance[k] = pulseIn(echoPin, HIGH, 50000) * 0.034 / 2;
+        distance[k] = pulseIn(echoPin, HIGH, 100000) * 0.034 / 2;
 
         lcd.setCursor(11,0);
         lcd.print(String(k+1));
@@ -68,7 +79,7 @@ void loop(){
 
     sortArray(distance, measurements);
 
-    median = distance[measurements/2];
+    median = distance[(measurements + 1) / 2 - 1];
 
     lcd.clear();
     lcd.print("Distance: " + String(median) + "cm");
@@ -78,7 +89,10 @@ void loop(){
         lcd.print("WiFi: " + String(WiFi.status()));
         if (WiFi.status() == WL_CONNECTED) {
             lcd.setCursor(0,1);
-            lcd.print("WiFi: connected       ");
+            lcd.print("WiFi: done      ");
+            delay(300);
+            lcd.setCursor(0,1);
+            lcd.print("WiFi: rssi " + String(WiFi.RSSI()));
             delay(300);
             break;
         }
