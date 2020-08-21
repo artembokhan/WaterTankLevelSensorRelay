@@ -7,7 +7,6 @@
 |Magnets|<img src="https://ae01.alicdn.com/kf/HTB1LNBUTa6qK1RjSZFmq6x0PFXaJ/2-5-10-15-20x5-5-20-x-5.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/1000008249898.html)|$6|1|$6|
 |Connector<br>GX16 4pin|<img src="https://ae01.alicdn.com/kf/HTB13zjWQPDpK1RjSZFrq6y78VXak/GX16-M16.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32823665189.html)|$1.3|1|$1.3|
 |UTP Cable<br>shielded|<img src="https://ae01.alicdn.com/kf/H75546d01f40040278156f8b9f9012f72p/Cat6A-SFTP-10.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/4000053396398.html)||5m|$12.8|
-|**Total**|||||$29,3|
 
 # Transmitter
 
@@ -26,7 +25,6 @@
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
 |USB Connector|<img src="https://ae01.alicdn.com/kf/HTB15.RMSpXXXXataXXXq6xXFXXXO/20-Micro-USB-5Pin-5P.jpg" width="40%"/>|[Link](https://aliexpress.ru/item/32778491155.html)|$|1|$|
-|**Total**|||||$78|
 
 # Relay
 
@@ -43,5 +41,3 @@
 |Cable SMA-IPEX<br>20cm|<img src="https://ae01.alicdn.com/kf/HTB1pNXDah1YBuNjy1zcq6zNcXXav.jpg" width="40%"/>|[Link](https://ru.aliexpress.com/item/32854050868.html)|$1.56|1|$1.56|
 |WiFi Antenna<br>Bester BDM|<img src="https://bester-ltd.ru/published/publicdata/BESPALOVBESTER/attachments/SC/products_pictures/bester_antenna_wi-fi_bdm_2400m_5_enl.jpg" width="40%"/>|[Link](https://bester-ltd.ru/product/wifi_antenna_bester_direct_mini-2400m/)|$24|1|$24|
 |Terminal Block|<img src="https://ae01.alicdn.com/kf/HTB12.Luarj1gK0jSZFuq6ArHpXaz/KF1000-2-3-4Pin-10-0mm-Pitch-2-3-4-Pin-2-3-4-Way-Straight.jpg" width="40%"/>|[Link](https://www.aliexpress.com/item/4000012925344.html)|$1.65|2|$3.3|
-
-|**Total**|||||$72|
