@@ -4,6 +4,7 @@
 const String  version = "AP-1.0";
 const char*   ssid = "point-uz";
 const char*   key = "nou8haiy";
+const int     channel = 2;
 const int     relayPin = 5;
 const int     distanceStart = 100, // Distance to turn on relay [cm] 
               distanceStop  = 30,  // Distance to turn off relay [cm]
@@ -16,25 +17,65 @@ unsigned long intervalIdle    =     1 * 60 * 60 * 1000, // 1 minutes: max workin
 int           distance=-1;
 String        StatusRelay = "off",
               StatusNetwork = "n/a";
-unsigned long timerGeneral = 0,
+uint64_t      timerGeneral = 0,
               timerSensor = 0,
               timerStop = 0,
-              timerStart = 0,
-              sensorCounter = 0,
+              timerStart = 0;
+unsigned long sensorCounter = 0,
               onCounter = 0;
+
+IPAddress addr_local(192,168,4,1);
+IPAddress addr_gw(192,168,4,1);
+IPAddress addr_netmask(255,255,255,0);
+
+const char* wifi_codes[] = {
+    "IDLE",
+    "NO_SSID",
+    "SCAN_COMPLETED",
+    "CONNECTED",
+    "CONNECT_FAILED",
+    "CONNECTION_LOST",
+    "DISCONNECTED"
+};
 
 LiquidCrystal    lcd(12,13,4,0,2,14); 
 ESP8266WebServer server(80);
 
+uint64_t millis64() {
+    static uint32_t low32, high32;
+    uint32_t new_low32 = millis();
+    if (new_low32 < low32) high32++;
+    low32 = new_low32;
+    return (uint64_t) high32 << 32 | low32;
+}
+
+String uint64ToString(uint64_t input) {
+    String result = "";
+    uint8_t base = 10;
+
+    do {
+        char c = input % base;
+        input /= base;
+
+        if (c < 10)
+            c +='0';
+        else
+            c += 'A' - 10;
+        result = c + result;
+    } while (input);
+
+    return result;
+}
+
 void updateRelay() {
     // Stop Relay
     if ((distance < distanceStop ||                    // when tank becomes full
-         millis() - timerSensor >= intervalIdle ||     // when no data from sensor
-         millis() - timerStart > intervalMaxWorking || // when working too long
+         millis64() - timerSensor >= intervalIdle ||     // when no data from sensor
+         millis64() - timerStart > intervalMaxWorking || // when working too long
          distance == -1 ) &&                           // when sensor data is invalid
                              StatusRelay == "on") {    // when relay is on
             digitalWrite(relayPin, LOW);
-            timerStop = millis();
+            timerStop = millis64();
             StatusRelay = "off";
     };
 
@@ -42,10 +83,10 @@ void updateRelay() {
     if (distance > distanceStart &&                 // when tank becomes empty
         distance > 0 &&                             // when sensor data is valid
         StatusRelay == "off" &&                     // when relay is off
-        millis() - timerSensor < intervalIdle &&    // when data from sensor is being recieved
-        (millis() - timerStop  > intervalProtect || onCounter == 0 )) { // when time from last on was passed
+        millis64() - timerSensor < intervalIdle &&    // when data from sensor is being recieved
+        (millis64() - timerStop  > intervalProtect || onCounter == 0 )) { // when time from last on was passed
             digitalWrite(relayPin, HIGH);
-            timerStart = millis();
+            timerStart = millis64();
             StatusRelay = "on";
             onCounter++;
     };
@@ -55,7 +96,7 @@ void LCDStatus() {
     lcd.setCursor(0,0);
     lcd.print(StatusRelay             + " | " + StatusNetwork                                          + "                ");
     lcd.setCursor(0,1);
-    lcd.print(String(distance) + "cm" + " | " + String(round((millis() - timerGeneral)/1000), 0) + "s" + "                ");
+    lcd.print(String(distance) + "cm" + " | " + uint64ToString((millis64() - timerGeneral)/1000) + "s" + "                ");
 }
 
 String IpAddress2String(const IPAddress& ipAddress) {
@@ -68,19 +109,19 @@ String IpAddress2String(const IPAddress& ipAddress) {
 String WebStatus() {
     String msg, LastOn, LastOff;
 
-    if (timerStart != 0) LastOn  = String((millis() - timerStart)/1000) + "s"; else LastOn  = "n/a";
-    if (timerStop  != 0) LastOff = String((millis() - timerStop) /1000) + "s"; else LastOff = "n/a";
+    if (timerStart != 0) LastOn  = uint64ToString((millis64() - timerStart)/1000) + "s"; else LastOn  = "n/a";
+    if (timerStop  != 0) LastOff = uint64ToString((millis64() - timerStop) /1000) + "s"; else LastOff = "n/a";
     
     msg += "Relay:               " + StatusRelay + "\n";
     msg += "Last Reply:          " + StatusNetwork + "\n";
     msg += "Distance:            " + String(distance)                       + "cm" + "\n";
     msg += "Sensor Conn Counter: " + String(sensorCounter)                         + "\n";
     msg += "Relay On Counter:    " + String(onCounter)                             + "\n";
-    msg += "General Timer:       " + String((millis() - timerGeneral)/1000) + "s"  + "\n";
-    msg += "Sensor Timer:        " + String((millis() - timerSensor) /1000) + "s"  + "\n";
+    msg += "General Timer:       " + uint64ToString((millis64() - timerGeneral)/1000) + "s"  + "\n";
+    msg += "Sensor Timer:        " + uint64ToString((millis64() - timerSensor) /1000) + "s"  + "\n";
     msg += "Last On Timer:       " + LastOn                                        + "\n";
     msg += "Last Off Timer:      " + LastOff                                       + "\n";
-    msg += "Uptime:              " + String( millis()                /1000) + "s"  + "\n";
+    msg += "Uptime:              " + uint64ToString( millis64()                /1000) + "s"  + "\n";
     msg += "\n";
     msg += "Start Distance:      " + String(distanceStart)                  + "cm" + "\n";
     msg += "Stop Distance:       " + String(distanceStop)                   + "cm" + "\n";
@@ -90,8 +131,8 @@ String WebStatus() {
     return msg;
 }
 
-void updateGeneralTimer() { timerGeneral = millis(); }
-void updateSensorTimer()  { timerSensor  = millis(); sensorCounter++; }
+void updateGeneralTimer() { timerGeneral = millis64(); }
+void updateSensorTimer()  { timerSensor  = millis64(); sensorCounter++; }
 
 void handle_Status() {
     server.send(200, "text/plain", WebStatus()); 
@@ -104,7 +145,7 @@ void handle_Sensor() {
     for (uint8_t i = 0; i < server.args(); i++) {
         if (server.argName(i) == "distance") {
             distance = server.arg(i).toInt();
-            if (distance < 0 || distance > distanceMax) { distance = -1; }
+            if (distance <= 0 || distance > distanceMax) { distance = -1; }
             has_distnace = 1;
             server.send(200, "text/plain", "UPDATED");
             StatusNetwork = "sensor/200";
@@ -152,10 +193,13 @@ void setup() {
     lcd.print("ap: " + String(ssid));
 
     // Start Access Point
-    WiFi.softAP(ssid, key);
+    WiFi.mode(WIFI_OFF);
+    WiFi.setPhyMode(WIFI_PHY_MODE_11B);
+    WiFi.mode(WIFI_AP);
+    WiFi.softAPConfig(addr_local, addr_gw, addr_netmask);
+    WiFi.softAP(ssid, key, channel);
 
     IPAddress ipaddress = WiFi.softAPIP();
-
     lcd.setCursor(0,1);
     lcd.print("ip: " + IpAddress2String(ipaddress));
 
@@ -173,5 +217,4 @@ void loop() {
     LCDStatus();
     server.handleClient();
     updateRelay();
-//    delay(50);
 }

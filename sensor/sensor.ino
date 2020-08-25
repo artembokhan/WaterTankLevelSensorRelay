@@ -3,27 +3,46 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-#define triggerPin 1 // TX pin
-#define echoPin 3 // RX pin
-#define donePin 5
+#define triggerPin   1 // TX pin
+#define echoPin      3 // RX pin
+#define donePin      5
 #define measurements 11
 
-const String version = "SENSOR-1.0";
-const char*  ssid = "point-uz";
-const char*  key = "nou8haiy";
+#define ipaddress IPAddress(192, 168, 5, 20)
+#define gateway   IPAddress(192, 168, 5, 254)
+#define netmask   IPAddress(255, 255, 255, 0)
 
-// static data to connect wifi quickly
-#define ipaddress IPAddress(192, 168, 4, 200)
-#define gateway   IPAddress(192, 168, 4,   1)
-#define mask      IPAddress(255, 255, 255, 0)
-uint8_t mac[6] = { 0xCE, 0x50, 0xE3, 0x69, 0x67, 0x5b }; // router's mac-address 
-int channel = 2; // wifi channel
+/*
+#define ipaddress IPAddress(192, 168, 4, 20)
+#define gateway   IPAddress(192, 168, 4, 1)
+#define netmask   IPAddress(255, 255, 255, 0)
+*/
+const String version    = "SENSOR-1.0";
+const char*  ssid       = "extender-uz";
+//const char*  ssid       = "point-uz";
+const char*  key        = "nou8haiy";
+const String relay_addr = "192.168.4.1";
 
-int distance [measurements], median;
+int distance [measurements],
+    median,
+    channel = 2;
+
+const char* wifi_codes[] = {
+    "IDLE           ",
+    "NO_SSID        ",
+    "SCAN_COMPLETED ",
+    "CONNECTED      ",
+    "CONNECT_FAILED ",
+    "CONNECTION_LOST",
+    "DISCONNECTED   "
+};
 
 // Init display
 //LiquidCrystal lcd(12,13,17,16,27,14); // espduino32
 LiquidCrystal    lcd(12,13,4,0,2,14);   // wemos d1 r2
+
+WiFiClient client;
+HTTPClient http;
 
 void setup() {
     // Init display
@@ -31,8 +50,6 @@ void setup() {
     lcd.clear();
     lcd.setCursor(0,0);
     lcd.print("Boot: " + version);
-
-    WiFi.config(ipaddress, gateway, mask);
 
     // Init timer pin
     digitalWrite(donePin, LOW);
@@ -42,13 +59,18 @@ void setup() {
     pinMode(triggerPin, OUTPUT);
     pinMode(echoPin, INPUT);
 
+    WiFi.mode(WIFI_OFF);
+    WiFi.setPhyMode(WIFI_PHY_MODE_11B);
+    WiFi.persistent(false);
+    WiFi.mode(WIFI_STA);
+    WiFi.config(ipaddress, gateway, netmask);
+
     delay(300);
 }
 
 void loop(){
-    WiFi.persistent(false);
-    WiFi.enableInsecureWEP();
-    WiFi.begin(ssid, key, channel, mac, true);
+    WiFi.disconnect();
+    WiFi.begin(ssid, key, channel);
     lcd.clear();
 
     // Measure distance
@@ -85,14 +107,21 @@ void loop(){
     lcd.print("Distance: " + String(median) + "cm");
 
     for (int i=0; i<=500; i++) {
+        int status = WiFi.status();
         lcd.setCursor(0,1);
-        lcd.print("WiFi: " + String(WiFi.status()));
-        if (WiFi.status() == WL_CONNECTED) {
+        lcd.print("WiFi: " + String(wifi_codes[status]));
+        if (status == WL_CONNECTED) {
             lcd.setCursor(0,1);
             lcd.print("WiFi: done      ");
             delay(300);
             lcd.setCursor(0,1);
             lcd.print("WiFi: rssi " + String(WiFi.RSSI()));
+            delay(300);
+            break;
+        }
+        if (status != WL_DISCONNECTED) {
+            lcd.setCursor(0,1);
+            lcd.print("WiFi: " + String(wifi_codes[status]));
             delay(300);
             break;
         }
@@ -105,20 +134,13 @@ void loop(){
     }
 
     else {
-        WiFiClient client;
-        HTTPClient http;
- 
-        http.begin(client, "http://" + WiFi.gatewayIP().toString() + "/sensor?distance=" + String(median));
-
+        http.begin(client, "http://" + relay_addr + "/sensor?distance=" + String(median));
         int httpCode = http.GET();
-
         lcd.setCursor(0,1);
         lcd.print("http: " + String(httpCode) + "          ");
- 
         http.end();
     }
-    
-    WiFi.disconnect();
+
     delay(1000);
     
     lcd.setCursor(0,1);
