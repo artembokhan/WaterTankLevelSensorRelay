@@ -12,14 +12,8 @@
 #define gateway   IPAddress(192, 168, 5, 254)
 #define netmask   IPAddress(255, 255, 255, 0)
 
-/*
-#define ipaddress IPAddress(192, 168, 4, 20)
-#define gateway   IPAddress(192, 168, 4, 1)
-#define netmask   IPAddress(255, 255, 255, 0)
-*/
 const String version    = "SENSOR-1.0";
 const char*  ssid       = "extender-uz";
-//const char*  ssid       = "point-uz";
 const char*  key        = "nou8haiy";
 const String relay_addr = "192.168.4.1";
 
