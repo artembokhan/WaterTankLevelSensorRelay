@@ -28,9 +28,9 @@ void setup() {
     WiFi.mode(WIFI_AP_STA);
     WiFi.config(ipaddress_station, gateway_station, netmask_station);
     WiFi.begin(ssid_station, key_station, channel);
-    while (WiFi.status() != WL_CONNECTED) {
-        delay(50);
-    }
+//    while (WiFi.status() != WL_CONNECTED) {
+//        delay(50);
+//    }
     WiFi.softAPConfig(ipaddress_ap, gateway_ap, netmask_ap);
     WiFi.softAP(ssid_ap, key_ap, channel);
 
